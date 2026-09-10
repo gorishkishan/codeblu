@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Membership Application — CodeBlu</title>
+<meta name="description" content="Apply to become a member of CodeBlu (India) — a non-profit community advancing healthcare education, professional development, research, wellbeing, and community engagement.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;1,9..144,450;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/redesign.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="pulse" viewBox="0 0 400 60">
+    <path d="M0 30 H130 L145 8 L162 52 L178 18 L190 40 L200 30 H400" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<div class="topbar">
+  <div class="wrap topbar-row">
+    <div class="topbar-social">
+      <a href="#" aria-label="Facebook"><span>f</span></a>
+      <a href="#" aria-label="Instagram"><span>ig</span></a>
+      <a href="#" aria-label="LinkedIn"><span>in</span></a>
+      <a href="https://wa.me/c/918097054272" target="_blank" aria-label="WhatsApp"><span>wa</span></a>
+    </div>
+    <div class="topbar-contact">
+      <a href="mailto:codebluwellness@gmail.com">codebluwellness@gmail.com</a>
+      <a href="tel:+918097054272">+91 80970 54272</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a href="index.html" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34"><path d="M20 4c-2 6-11 12-11 21a11 11 0 0 0 22 0c0-9-9-15-11-21z" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M11 23h6l2-5 3 9 2-4h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="logo-text">CodeBlu<em>Wellness for the Wellness-givers</em></span>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-burger" aria-label="Menu"><span></span></label>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="has-drop">
+          <a href="index.html#what-we-do">What We Do</a>
+          <button type="button" class="dd-toggle" aria-label="Toggle What We Do submenu" aria-expanded="false"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="dropdown">
+            <li><a href="index.html#wellness-workshops">Wellness Workshops</a></li>
+            <li><a href="index.html#hobby-workshops">Hobby Workshops</a></li>
+            <li><a href="index.html#getaways">Getaways</a></li>
+            <li><a href="index.html#career-coaching">Career Coaching</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#specialist-teams">Our Divisions</a></li>
+        <li class="has-drop">
+          <a href="index.html#resources">Resources</a>
+          <button type="button" class="dd-toggle" aria-label="Toggle Resources submenu" aria-expanded="false"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="dropdown">
+            <li><a href="books.html">Books</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#team">Our Team</a></li>
+        <li><a href="membership.html" class="active">Membership</a></li>
+        <li><a href="contact.html?intent=donate#contactus" class="nav-donate">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="membership.html" class="btn btn-primary nav-cta">Become a Member</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <span>Membership</span></div>
+    <span class="eyebrow">JOIN THE COMMUNITY</span>
+    <h1>Become a CodeBlu member</h1>
+    <p>CodeBlu (India) is a non-profit organisation committed to advancing healthcare education, professional development, research, wellbeing, and community engagement. Complete the form below to apply — all information is treated confidentially and used only for membership-related purposes.</p>
+  </div>
+</section>
+
+<section class="contact-main" id="membership-form">
+  <div class="wrap">
+    <form class="membership-form-box" id="membership-application-form" novalidate>
+
+      <!-- Honeypot field for basic spam protection, hidden from real users -->
+      <input type="text" name="botcheck" class="hp-field" style="display:none" tabindex="-1" autocomplete="off">
+
+      <!-- Web3Forms delivery settings -->
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+      <input type="hidden" name="subject" value="New CodeBlu Membership Application">
+      <input type="hidden" name="from_name" value="CodeBlu Website — Membership Form">
+
+      <div class="form-section">
+        <h2 class="form-section-title">Personal Information</h2>
+
+        <div class="form-row two">
+          <div class="field">
+            <label for="m-fullname" class="field-required">Full Name</label>
+            <input type="text" id="m-fullname" name="Full Name" required placeholder="Your full name">
+          </div>
+          <div class="field">
+            <label for="m-title">Title</label>
+            <select id="m-title" name="Title">
+              <option value="">Select…</option>
+              <option>Dr.</option>
+              <option>Mr.</option>
+              <option>Mrs.</option>
+              <option>Ms.</option>
+              <option>Prof.</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row two">
+          <div class="field">
+            <label for="m-dob">Date of Birth (Optional)</label>
+            <input type="date" id="m-dob" name="Date of Birth">
+          </div>
+          <div class="field">
+            <label for="m-gender">Gender (Optional)</label>
+            <input type="text" id="m-gender" name="Gender" placeholder="Optional">
+          </div>
+        </div>
+
+        <div class="form-row two">
+          <div class="field">
+            <label for="m-email" class="field-required">Email Address</label>
+            <input type="email" id="m-email" name="Email Address" required placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="m-mobile" class="field-required">Mobile Number</label>
+            <input type="tel" id="m-mobile" name="Mobile Number" required placeholder="+91 00000 00000">
+          </div>
+        </div>
+
+        <div class="form-row three">
+          <div class="field">
+            <label for="m-city" class="field-required">City</label>
+            <input type="text" id="m-city" name="City" required>
+          </div>
+          <div class="field">
+            <label for="m-state">State</label>
+            <input type="text" id="m-state" name="State">
+          </div>
+          <div class="field">
+            <label for="m-country" class="field-required">Country</label>
+            <input type="text" id="m-country" name="Country" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2 class="form-section-title">Professional Information</h2>
+
+        <div class="form-row two">
+          <div class="field">
+            <label for="m-occupation">Current Occupation</label>
+            <input type="text" id="m-occupation" name="Current Occupation">
+          </div>
+          <div class="field">
+            <label for="m-org">Organisation / Institution</label>
+            <input type="text" id="m-org" name="Organisation/Institution">
+          </div>
+        </div>
+
+        <div class="form-row two">
+          <div class="field">
+            <label for="m-regno">Professional Registration Number (if applicable)</label>
+            <input type="text" id="m-regno" name="Professional Registration Number">
+          </div>
+          <div class="field">
+            <label for="m-speciality">Speciality / Area of Expertise</label>
+            <input type="text" id="m-speciality" name="Speciality/Area of Expertise">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="m-qualification">Highest Qualification</label>
+            <input type="text" id="m-qualification" name="Highest Qualification">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2 class="form-section-title field-required">Membership Category</h2>
+        <p class="form-section-hint">Please select one.</p>
+        <div class="radio-group">
+          <label class="radio-option"><input type="radio" name="Membership Category" value="Student Member" required> Student Member</label>
+          <label class="radio-option"><input type="radio" name="Membership Category" value="Healthcare Professional Member" required> Healthcare Professional Member</label>
+          <label class="radio-option"><input type="radio" name="Membership Category" value="Academic Member" required> Academic Member</label>
+          <label class="radio-option"><input type="radio" name="Membership Category" value="Allied Health Professional Member" required> Allied Health Professional Member</label>
+          <label class="radio-option"><input type="radio" name="Membership Category" value="Research Member" required> Research Member</label>
+          <label class="radio-option"><input type="radio" name="Membership Category" value="Volunteer Member" required> Volunteer Member</label>
+          <label class="radio-option"><input type="radio" name="Membership Category" value="Corporate Member" required> Corporate Member</label>
+          <label class="radio-option"><input type="radio" name="Membership Category" value="International Member" required> International Member</label>
+          <label class="radio-option"><input type="radio" name="Membership Category" value="Honorary Member (Invitation Only)" required> Honorary Member (Invitation Only)</label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2 class="form-section-title">Areas of Interest</h2>
+        <p class="form-section-hint">Please select all that apply.</p>
+        <div class="checkbox-group" id="m-interests-group">
+          <label class="checkbox-option"><input type="checkbox" name="Areas of Interest" value="Career Coaching"> Career Coaching</label>
+          <label class="checkbox-option"><input type="checkbox" name="Areas of Interest" value="Soft Skills Development"> Soft Skills Development</label>
+          <label class="checkbox-option"><input type="checkbox" name="Areas of Interest" value="Simulation-Based Education"> Simulation-Based Education</label>
+          <label class="checkbox-option"><input type="checkbox" name="Areas of Interest" value="Holistic Resilience & Wellbeing"> Holistic Resilience &amp; Wellbeing</label>
+          <label class="checkbox-option"><input type="checkbox" name="Areas of Interest" value="Research"> Research</label>
+          <label class="checkbox-option"><input type="checkbox" name="Areas of Interest" value="Leadership"> Leadership</label>
+          <label class="checkbox-option"><input type="checkbox" name="Areas of Interest" value="Medical Education"> Medical Education</label>
+          <label class="checkbox-option"><input type="checkbox" name="Areas of Interest" value="Public Health"> Public Health</label>
+          <label class="checkbox-option"><input type="checkbox" name="Areas of Interest" value="Prose & Poetry"> Prose &amp; Poetry</label>
+          <label class="checkbox-option"><input type="checkbox" name="Areas of Interest" value="Media & Communications"> Media &amp; Communications</label>
+          <label class="checkbox-option"><input type="checkbox" name="Areas of Interest" value="Community Outreach"> Community Outreach</label>
+          <label class="checkbox-option"><input type="checkbox" name="Areas of Interest" value="Volunteering"> Volunteering</label>
+          <label class="checkbox-option"><input type="checkbox" name="Areas of Interest" value="Mentoring"> Mentoring</label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2 class="form-section-title">Would you like to volunteer with CodeBlu?</h2>
+        <div class="radio-group">
+          <label class="radio-option"><input type="radio" name="Would Like to Volunteer" value="Yes" id="m-volunteer-yes"> Yes</label>
+          <label class="radio-option"><input type="radio" name="Would Like to Volunteer" value="No" id="m-volunteer-no"> No</label>
+        </div>
+        <div class="conditional-field" id="m-volunteer-detail-wrap">
+          <div class="field">
+            <label for="m-volunteer-detail">If yes, please indicate your areas of interest</label>
+            <input type="text" id="m-volunteer-detail" name="Volunteer Areas of Interest" placeholder="e.g. event coordination, mentoring, outreach...">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-row">
+          <div class="field">
+            <label for="m-why">Why would you like to join CodeBlu?</label>
+            <textarea id="m-why" name="Why Join CodeBlu" rows="4" placeholder="Tell us a little about your motivation..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2 class="form-section-title">How did you hear about CodeBlu?</h2>
+        <div class="radio-group">
+          <label class="radio-option"><input type="radio" name="Heard About CodeBlu" value="Website"> Website</label>
+          <label class="radio-option"><input type="radio" name="Heard About CodeBlu" value="Social Media"> Social Media</label>
+          <label class="radio-option"><input type="radio" name="Heard About CodeBlu" value="Friend/Colleague"> Friend/Colleague</label>
+          <label class="radio-option"><input type="radio" name="Heard About CodeBlu" value="Conference"> Conference</label>
+          <label class="radio-option"><input type="radio" name="Heard About CodeBlu" value="Educational Institution"> Educational Institution</label>
+          <label class="radio-option" id="m-heard-other-label"><input type="radio" name="Heard About CodeBlu" value="Other" id="m-heard-other-radio"> Other</label>
+        </div>
+        <div class="conditional-field" id="m-heard-other-wrap">
+          <div class="field">
+            <label for="m-heard-other-text">Please specify</label>
+            <input type="text" id="m-heard-other-text" name="Heard About CodeBlu - Other">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2 class="form-section-title">Membership Declaration</h2>
+        <div class="declaration-box">
+          <p>I confirm that the information provided is accurate to the best of my knowledge. I agree to abide by the values, policies, and code of conduct of CodeBlu (India). I understand that my membership application is subject to review and approval.</p>
+          <label class="checkbox-option">
+            <input type="checkbox" name="Declaration Agreed" value="Yes" id="m-declaration" required>
+            I agree to the above declaration.
+          </label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2 class="form-section-title">Privacy Consent</h2>
+        <div class="checkbox-group single-col">
+          <label class="checkbox-option">
+            <input type="checkbox" name="Consent - Data Storage" value="Yes" id="m-consent-storage" required>
+            I consent to CodeBlu (India) storing my information for membership administration and organisational communications.
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" name="Consent - Newsletters" value="Yes">
+            I would like to receive newsletters, updates, educational resources, and invitations to events.
+          </label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2 class="form-section-title">Membership Fee</h2>
+        <p class="fee-note">If you have already made a payment towards your membership fee, please share the details below. If not, leave this section blank — our team will follow up with payment instructions once your application is reviewed.</p>
+        <div class="form-row two">
+          <div class="field">
+            <label for="m-fee-type">Membership Type</label>
+            <input type="text" id="m-fee-type" name="Fee - Membership Type">
+          </div>
+          <div class="field">
+            <label for="m-fee-amount">Amount Paid</label>
+            <input type="text" id="m-fee-amount" name="Fee - Amount Paid" placeholder="e.g. ₹500">
+          </div>
+        </div>
+        <div class="form-row two">
+          <div class="field">
+            <label for="m-fee-ref">Payment Reference Number</label>
+            <input type="text" id="m-fee-ref" name="Fee - Payment Reference Number">
+          </div>
+          <div class="field">
+            <label for="m-fee-date">Payment Date</label>
+            <input type="date" id="m-fee-date" name="Fee - Payment Date">
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary full" id="m-submit-btn">Submit Application</button>
+
+      <div class="form-status" id="m-form-status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="logo-text light">CodeBlu</span>
+      <p>India's community for healthcare professional wellness — by healers, for healers.</p>
+      <div class="footer-social">
+        <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">LinkedIn</a>
+        <a href="https://wa.me/c/918097054272" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#what-we-do">What We Do</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="blog.html">Resources</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <ul>
+        <li><a href="mailto:codebluwellness@gmail.com">codebluwellness@gmail.com</a></li>
+        <li><a href="tel:+918097054272">+91 80970 54272</a></li>
+      </ul>
+    </div>
+    <div class="footer-col newsletter">
+      <h4>Newsletter</h4>
+      <p>Our newsletter for health professionals is launching soon.</p>
+      <form onsubmit="return false;" class="news-form">
+        <input type="email" placeholder="Coming soon...">
+        <button type="submit">&rarr;</button>
+      </form>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; <span id="year"></span> CodeBlu Wellness Foundation. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/redesign.js"></script>
+</body>
+</html>
