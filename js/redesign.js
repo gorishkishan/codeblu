@@ -73,6 +73,37 @@ document.querySelectorAll('.dd-toggle').forEach(btn=>{
   });
 })();
 
+// team section — category filter (Core Team / Mentors / Patrons / Support)
+(function(){
+  const filterBtns = document.querySelectorAll('.team-filter-btn');
+  const panels = document.querySelectorAll('.team-panels .team-grid');
+  if(!filterBtns.length || !panels.length) return;
+
+  filterBtns.forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const cat = btn.getAttribute('data-cat');
+
+      filterBtns.forEach(b=>{
+        b.classList.remove('active');
+        b.setAttribute('aria-selected','false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+
+      panels.forEach(panel=>{
+        if(panel.getAttribute('data-cat-panel') === cat){
+          panel.hidden = false;
+          // cards inside a panel that was hidden on load never got a chance
+          // to cross the IntersectionObserver threshold — reveal them now
+          panel.querySelectorAll('[data-reveal]').forEach(el=>el.classList.add('in'));
+        } else {
+          panel.hidden = true;
+        }
+      });
+    });
+  });
+})();
+
 function highlightServiceCard(hash){
   const id = (hash || location.hash).replace('#','');
   const validIds = ['wellness-workshops','hobby-workshops','getaways','career-coaching'];

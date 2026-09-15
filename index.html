@@ -453,32 +453,123 @@
       <span class="eyebrow">THE PEOPLE BEHIND CODEBLU</span>
       <h2>Team Codeblu</h2>
     </div>
-    <div class="team-grid">
-      <div class="team-card" data-reveal>
-        <img src="images/team/team-vaishnavi-chandramohan.jpg" alt="Dr. Vaishnavi Chandramohan">
-        <h3>Dr. Vaishnavi Chandramohan</h3>
-        <span>Head of Media &amp; Music</span>
+
+    <!-- category switch: keeps ~17 people out of one long scroll -->
+    <div class="team-filter" role="tablist" aria-label="Team categories" data-reveal>
+      <button class="team-filter-btn active" type="button" role="tab" aria-selected="true" data-cat="core">
+        Core Team
+      </button>
+      <button class="team-filter-btn" type="button" role="tab" aria-selected="false" data-cat="mentors">
+        Mentors
+      </button>
+      <button class="team-filter-btn" type="button" role="tab" aria-selected="false" data-cat="patrons">
+        Patrons
+      </button>
+      <button class="team-filter-btn" type="button" role="tab" aria-selected="false" data-cat="support">
+        Design &amp; Tech Support
+      </button>
+    </div>
+
+    <div class="team-panels">
+
+      <!-- CORE TEAM -->
+      <div class="team-grid" data-cat-panel="core">
+        <div class="team-card" data-reveal>
+          <img src="images/team/team-vaishnavi-chandramohan.jpg" alt="Dr. Vaishnavi Chandramohan">
+          <h3>Dr. Vaishnavi Chandramohan</h3>
+          <span>Head of Media &amp; Music</span>
+        </div>
+        <div class="team-card" data-reveal>
+          <img src="images/team/team-amit-nagpal.jpg" alt="Dr. Amit Nagpal">
+          <h3>Dr. Amit Nagpal</h3>
+          <span>Head of Soft Skills &amp; Simulation</span>
+        </div>
+        <div class="team-card" data-reveal>
+          <img src="images/team/team-murtuza-ghiya.jpg" alt="Dr. Murtuza Ghiya">
+          <h3>Dr. Murtuza Ghiya</h3>
+          <span>Head of Career Coaching</span>
+        </div>
+
+        <div class="team-role-card" data-reveal>
+          <span class="role-eyebrow">Resilience &amp; Research</span>
+          <ul class="role-member-list">
+            <li><span class="avatar-initials ai-1">SB</span>Dr. Smriti Bhargava</li>
+            <li><span class="avatar-initials ai-2">WW</span>Dr. William Wilson</li>
+            <li><span class="avatar-initials ai-3">PG</span>Dr. Prakruti Gabhawala</li>
+          </ul>
+        </div>
+
+        <div class="team-role-card" data-reveal>
+          <span class="role-eyebrow">Social Media &amp; Prose/Poetry</span>
+          <ul class="role-member-list">
+            <li><span class="avatar-initials ai-1">AD</span>Dr. Ashutosh Dahdich</li>
+            <li><span class="avatar-initials ai-2">PP</span>Dr. Paul Peter</li>
+          </ul>
+        </div>
+
+        <div class="team-role-card" data-reveal>
+          <span class="role-eyebrow">Academics</span>
+          <ul class="role-member-list">
+            <li><span class="avatar-initials ai-3">AG</span>Dr. Alok Gangurde</li>
+            <li><span class="avatar-initials ai-1">SG</span>Dr. Sahana Gurulingaiah</li>
+          </ul>
+        </div>
+
+        <div class="team-role-card" data-reveal>
+          <span class="role-eyebrow">Nursing &amp; Physiotherapy</span>
+          <ul class="role-member-list">
+            <li><span class="avatar-initials ai-2">MH</span>Dr. Monica Hendricks</li>
+          </ul>
+        </div>
       </div>
-      <div class="team-card" data-reveal>
-        <img src="images/team/team-amit-nagpal.jpg" alt="Dr. Amit Nagpal">
-        <h3>Dr. Amit Nagpal</h3>
-        <span>Head of Soft Skills &amp; Simulation</span>
+
+      <!-- MENTORS -->
+      <div class="team-grid" data-cat-panel="mentors" hidden>
+        <div class="team-person-card" data-reveal>
+          <span class="avatar-initials ai-block ai-1">RN</span>
+          <h3>Dr. Ram Nair</h3>
+          <span>Former CEO, JeevaRaksha Trust</span>
+        </div>
+        <div class="team-person-card" data-reveal>
+          <span class="avatar-initials ai-block ai-2">GC</span>
+          <h3>Dr. Gunjan Chanchalani</h3>
+          <span>Vice President, ISCCM</span>
+        </div>
+        <div class="team-person-card" data-reveal>
+          <span class="avatar-initials ai-block ai-3">SG</span>
+          <h3>Dr. Saurabh Gupta</h3>
+          <span>Public Health Consultant, UK</span>
+        </div>
       </div>
-      <div class="team-card" data-reveal>
-        <img src="images/team/team-murtuza-ghiya.jpg" alt="Dr. Murtuza Ghiya">
-        <h3>Dr. Murtuza Ghiya</h3>
-        <span>Head of Career Coaching</span>
+
+      <!-- PATRONS -->
+      <div class="team-grid" data-cat-panel="patrons" hidden>
+        <div class="team-person-card" data-reveal>
+          <span class="avatar-initials ai-block ai-1">NK</span>
+          <h3>Dr. Nilima Kadambi</h3>
+          <span>Former Chairperson, IMA Standing Committee for Wellbeing</span>
+        </div>
+        <div class="team-person-card" data-reveal>
+          <span class="avatar-initials ai-block ai-2">AR</span>
+          <h3>Dr. Anthony Robert</h3>
+          <span>Former Advisor, IMA Standing Committee for Wellbeing</span>
+        </div>
       </div>
-      <div class="team-card" data-reveal>
-        <img src="images/team/avatar-female.svg" alt="Dr. Smriti Bhargava">
-        <h3>Dr. Smriti Bhargava</h3>
-        <span>Facilitator, Resilience and Research</span>
+
+      <!-- DESIGN & TECHNICAL SUPPORT -->
+      <div class="team-grid" data-cat-panel="support" hidden>
+        <div class="team-person-card" data-reveal>
+          <span class="avatar-initials ai-block ai-3">CR</span>
+          <h3>Mrs. Chandni Raheja</h3>
+          <span>Design &amp; Technical Support</span>
+        </div>
+        <div class="team-person-card" data-reveal>
+          <span class="avatar-initials ai-block ai-1">AA</span>
+          <h3>Dr. Amrutha Avati</h3>
+          <span>Design &amp; Technical Support</span>
+        </div>
       </div>
-      <div class="team-card" data-reveal>
-        <img src="images/team/avatar-male.svg" alt="Dr. Ashutosh Dahdich">
-        <h3>Dr. Ashutosh Dahdich</h3>
-        <span>Editor, Newsletter Prose and Poetry</span>
-      </div>
+
     </div>
   </div>
 </section>

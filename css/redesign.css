@@ -466,11 +466,64 @@ p{line-height:1.7;color:var(--ink-soft);margin:0 0 1em;}
 
 /* ============ TEAM ============ */
 .team{background:var(--navy);padding:100px 0;}
-.team-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;}
+
+/* category switch — keeps ~17 names from turning into one long scroll */
+.team-filter{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:38px;}
+.team-filter-btn{
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.16);
+  color:#cfe3e1;padding:10px 20px;border-radius:999px;
+  font-family:var(--sans);font-size:.83rem;font-weight:600;
+  cursor:pointer;transition:.25s ease;white-space:nowrap;
+}
+.team-filter-btn:hover{background:rgba(255,255,255,.1);color:#fff;}
+.team-filter-btn.active{background:var(--amber);border-color:var(--amber);color:var(--navy);}
+
+.team-panels{position:relative;}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px;align-items:stretch;}
+.team-grid[hidden]{display:none;}
+
+/* individual, photo-based card (existing style, untouched) */
 .team-card{text-align:center;}
 .team-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px;margin-bottom:14px;filter:grayscale(.15);}
 .team-card h3{color:#fff;font-size:.95rem;margin-bottom:2px;}
 .team-card span{color:#9fc0bd;font-size:.76rem;}
+
+/* individual card without a photo — initials avatar instead (mentors/patrons/support) */
+.team-person-card{text-align:center;}
+.team-person-card .avatar-initials.ai-block{
+  width:100%;aspect-ratio:1/1;border-radius:18px;margin-bottom:14px;
+  font-size:1.6rem;letter-spacing:.03em;
+}
+.team-person-card h3{color:#fff;font-size:.95rem;margin-bottom:2px;}
+.team-person-card span{color:#9fc0bd;font-size:.76rem;line-height:1.4;display:block;}
+
+/* grouped "division" card — several people sharing one role, one compact card */
+.team-role-card{
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;padding:24px 22px;text-align:left;
+  display:flex;flex-direction:column;gap:16px;transition:.25s ease;
+}
+.team-role-card:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2);}
+.role-eyebrow{
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--amber);font-weight:700;
+}
+.role-member-list{display:flex;flex-direction:column;gap:12px;}
+.role-member-list li{display:flex;align-items:center;gap:12px;color:#fff;font-size:.9rem;}
+
+/* circular initials avatar, used inline in role-cards and standalone in person-cards */
+.avatar-initials{
+  flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;
+  width:36px;height:36px;border-radius:50%;color:#fff;font-weight:700;font-size:.7rem;
+}
+.ai-1{background:var(--teal);}
+.ai-2{background:var(--amber);color:var(--navy);}
+.ai-3{background:#3B5F6C;}
+
+@media (max-width:640px){
+  .team-filter{gap:8px;}
+  .team-filter-btn{padding:8px 16px;font-size:.78rem;}
+}
 
 /* ============ TESTIMONIALS ============ */
 .testimonials{padding:100px 0;}
@@ -870,9 +923,6 @@ p{line-height:1.7;color:var(--ink-soft);margin:0 0 1em;}
 }
 
 /* ============ RESPONSIVE ============ */
-@media (max-width:1080px){
-  .team-grid{grid-template-columns:repeat(3,1fr);}
-}
 @media (max-width:960px){
   .hero-grid,.about-grid,.story-grid,.appt-grid{grid-template-columns:1fr;}
   .story-badge{position:static;max-width:none;margin-top:-40px;margin-left:20px;margin-right:20px;}
@@ -916,7 +966,7 @@ p{line-height:1.7;color:var(--ink-soft);margin:0 0 1em;}
 }
 @media (max-width:640px){
   .mission-grid,.service-grid,.testi-grid,.blog-grid,.footer-grid{grid-template-columns:1fr;}
-  .team-grid{grid-template-columns:repeat(2,1fr);}
+  .team-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
   .form-row.two{grid-template-columns:1fr;}
   .cta-row{flex-direction:column;align-items:flex-start;}
   .about-stats{position:static;margin-top:16px;}
